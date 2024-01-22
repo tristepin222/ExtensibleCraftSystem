@@ -5,7 +5,7 @@ using UnityEditor;
 using UnityEngine;
 using NaughtyAttributes;
 
-[CreateAssetMenu(menuName = "CrimsonGames/ItemScriptableObject")]
+[CreateAssetMenu(menuName = "CrimsonGames/Item")]
 public class Item : ScriptableObject
 {
     public int id;
@@ -20,7 +20,7 @@ public class Item : ScriptableObject
     [Dropdown("GetItemStates")]
     public string ItemState;
 
-    private List<string> GetItemTypes() 
+    public List<string> GetItemTypes() 
     { 
         List<string> types = new List<string>();
         ResourcesLoader.LoadAllScriptableObject("ScriptableObjects/Items/ItemType").ToList().ForEach(delegate (ItemType itemType) { types.AddRange(itemType.ItemTypes); });

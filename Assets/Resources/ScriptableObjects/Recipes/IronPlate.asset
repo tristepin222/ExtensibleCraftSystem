@@ -9,12 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82dbaa6e1bb2d3c4582d4bf3200c155b, type: 3}
-  m_Name: ItemType
+  m_Script: {fileID: 11500000, guid: 94643bee3b197504299f8573266a3a20, type: 3}
+  m_Name: IronPlate
   m_EditorClassIdentifier: 
-  ItemTypes:
-  - None
-  - Bar
-  - Plate
-  - Log
-  - Ore
+  inputItems:
+  - {fileID: 11400000, guid: 31fc3fed906b8a446a33c30c133dcb33, type: 2}
+  outputItems:
+  - {fileID: 11400000, guid: eecfe048673abf84ebcea110e0f28a47, type: 2}
+  isExact: 0
